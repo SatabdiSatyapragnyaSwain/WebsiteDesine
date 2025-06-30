@@ -9,10 +9,10 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The appli
 ## Author:
 Satabdi Satyapragnya Swain
 
-## Landing Page
+## Landing Page:
 ![image](https://github.com/user-attachments/assets/38ccdef8-b17c-44c3-a675-3db2d9c02fb6)
 
-## Some Pages of the Website
+## Some Pages of the Website:
 ![image](https://github.com/user-attachments/assets/39de556a-c26c-4647-89b1-d18b8cac3b7c)
 
 ![image](https://github.com/user-attachments/assets/c8d3db66-0126-4b34-b80f-77eec6be7a96)
