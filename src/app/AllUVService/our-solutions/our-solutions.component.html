@@ -1,0 +1,27 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mt-5">Our Solutions</h1>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-3" *ngFor="let solution of displayedSolutions">
+                <div class="card">
+                    <div class="card-body">
+                        <h2>{{ solution.title }}</h2>
+                        <p>{{ solution.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12 changebutton">
+                <div class="leftRight">
+                    <span (click)="prevCard()">⬅️ </span>
+                    <span (click)="nextCard()"> ➡️</span>
+                </div>
+            </div>  
+        </div>
+    </div>
+</div>

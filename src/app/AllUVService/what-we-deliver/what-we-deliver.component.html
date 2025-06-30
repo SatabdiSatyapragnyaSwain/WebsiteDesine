@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mt-5">What We Deliver</h1>
+            </div>
+        </div>
+
+        <!-- Cards for Large Screens -->
+        <div class="row d-none d-md-flex">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12" *ngFor="let card of cards">
+                <div class="card">
+                    <div class="card-title">
+                        <h2>{{ card.title }}</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li *ngFor="let item of card.items">{{ item }}</li>
+                        </ul>
+                        <div class="image-container">
+                            <img [src]="card.image" [alt]="card.title">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Card View for Small Screens -->
+        <div class="row d-md-none">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-title">
+                        <h2>{{ cards[visibleCardIndex].title }}</h2>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li *ngFor="let item of cards[visibleCardIndex].items">{{ item }}</li>
+                        </ul>
+                        <div class="image-container">
+                            <img [src]="cards[visibleCardIndex].image" [alt]="cards[visibleCardIndex].title">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 changebutton">
+                <div class="leftRight">
+                    <span (click)="prevCard()">⬅️ </span>
+                    <span (click)="nextCard()"> ➡️</span>
+                </div>
+            </div>            
+        </div>
+    </div>
+</div>

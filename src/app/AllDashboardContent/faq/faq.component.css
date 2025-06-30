@@ -1,0 +1,111 @@
+.mt {
+    margin-top: 100px;
+}
+
+h1.Main-titel {
+    font-size: 2.4em;
+    color: #104c9b;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p.Main-titel {
+    font-size: 1.1em;
+    color: #0c691e;
+    line-height: 1.6;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.faqHeading i {
+    display: inline-block;
+    width: 25px;        
+    height: 25px;       
+    border-radius: 50%; 
+    background-color: #007bff; 
+    color: white;       
+    text-align: center; 
+    line-height: 25px;  
+    font-size: 16px;    
+    margin-right: 10px; 
+}
+
+.faqHeading {
+    font-size: 18px;
+    color: #104c9b;
+    margin: 0;
+    line-height: 1.5;
+    display: inline-block;
+    padding: 30px;
+}
+
+.mat-expansion-panel{
+    margin-top: 40px;
+}
+
+.mat-expansion-panel-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 16px;
+    height: max-content;
+}
+
+.mat-panel-title {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+}
+
+.faqData {
+    padding: 30px;
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .faqHeading {
+        font-size: 16px;
+    }
+
+    .faqData {
+        font-size: 14px;
+        padding: 20px;
+    }
+
+    .mat-expansion-panel-header {
+        padding: 8px 12px;
+    }
+
+    .faqHeading i {
+        font-size: 14px;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .faqHeading {
+        font-size: 14px;
+    }
+
+    .faqData {
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    .mat-expansion-panel-header {
+        padding: 6px 10px;
+    }
+
+    .faqHeading i {
+        font-size: 12px;
+        width: 18px;
+        height: 18px;
+        line-height: 18px;
+    }
+}

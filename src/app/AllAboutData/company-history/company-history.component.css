@@ -1,0 +1,336 @@
+.companyBg {
+    background: url("../../../assets/AboutUs/CompanyHistory.png") center center no-repeat;
+    background-size: cover;
+    padding: 80px;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.companyBg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(215, 210, 210, 0.432);
+    z-index: 1;
+}
+
+.col-md-6 {
+    margin-top: 50px;
+}
+
+.yearsdata {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.yearsdata h1 {
+    color: #104c9b;
+    font-size: 4rem;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+}
+
+.yearsdata h6 {
+    color: #104c9b !important;
+    font-size: 1.8rem;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+}
+
+.yearsdata p {
+    color: #000;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+    margin-top: 50px;
+}
+
+.yearsdata span {
+    color: #104c9b;
+}
+
+.companyHistory h1 {
+    color: #104c9b;
+    font-size: 2rem;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+}
+
+.companyHistory p {
+    color: #000;
+    font-size: 1.2rem;
+    z-index: 2;
+    position: relative;
+    margin-top: 30px;
+    font-family: serifx;
+    line-height: 1.8;
+}
+
+/* ------------------------------------------------------------ */
+
+.cardcolor {
+    background: url("../../../assets/AboutUs/Company.jpeg") center center no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.cardcolor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 0, 0, 0.432);
+    z-index: 1;
+}
+
+.card-item img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white !important;
+    z-index: 2;
+    position: relative;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white !important;
+    z-index: 2;
+    position: relative;
+}
+
+h6 {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: white !important;
+    z-index: 2;
+    position: relative;
+}
+
+.col-md-4 {
+    margin-top: 50px;
+}
+
+/* ---------------------------------------------------- */
+
+.wantToWork {
+    background: url("../../../assets/AboutUs/WantToWork.jpeg") center center no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.wantToWork::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 0, 0, 0.432);
+    z-index: 1;
+}
+
+.wantToWork h6 {
+    color: #38f95f !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+}
+
+.wantToWork h1 {
+    color: white;
+    font-size: 2.2rem;
+    font-weight: bold;
+    z-index: 2;
+    position: relative;
+    margin-top: 20px;
+}
+
+.wantToWork p {
+    color: white;
+    font-size: 1rem;
+    line-height: 1.8;
+    z-index: 2;
+    position: relative;
+    margin-top: 20px;
+}
+
+.wantToWork button {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 10px;
+    z-index: 2;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.wantToWork .callNow {
+    background-color: #0c691e;
+}
+
+.wantToWork .contactUs {
+    background-color: #007bff;
+}
+
+.wantToWork .callNow:hover {
+    background-color: #2ed34a;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.wantToWork .contactUs:hover {
+    background-color: #0056b3;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+}
+
+.wantToWork .callNow:active {
+    background-color: #28a745;
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.wantToWork .contactUs:active {
+    background-color: #004085;
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+@media screen and (max-width: 768px) {
+    .container-fluid {
+        padding: 20px 10px;
+    }
+
+    .yearsdata h1 {
+        font-size: 2.5rem;
+    }
+
+    .yearsdata h6 {
+        font-size: 1.5rem;
+    }
+
+    .yearsdata p {
+        font-size: 1rem;
+        margin-top: 30px;
+    }
+
+    .companyHistory h1 {
+        font-size: 1.8rem;
+    }
+
+    .companyHistory p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col-md-6,
+    .col-md-3 {
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    h6 {
+        font-size: 0.9rem;
+    }
+
+    .card-item img {
+        max-width: 60px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+
+    .companyBg,
+    .cardcolor {
+        padding: 30px 10px;
+        background-attachment: scroll;
+    }
+
+    .yearsdata h1 {
+        font-size: 2rem;
+    }
+
+    .yearsdata h6 {
+        font-size: 1.2rem;
+    }
+
+    .yearsdata p {
+        font-size: 0.9rem;
+        margin-top: 20px;
+    }
+
+    .companyHistory h1 {
+        font-size: 1.5rem;
+    }
+
+    .companyHistory p {
+        font-size: 0.9rem;
+    }
+
+    .row {
+        margin: 0;
+    }
+
+    .col-md-3 {
+        margin-bottom: 20px;
+    }
+
+    .card-text {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+
+    h6 {
+        font-size: 0.8rem;
+    }
+
+    .card-item img {
+        max-width: 50px;
+    }
+}

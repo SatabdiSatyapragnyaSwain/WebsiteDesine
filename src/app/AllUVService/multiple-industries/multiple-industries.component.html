@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mt-5">Across Multiple Industries</h1>
+            </div>
+        </div>
+
+        <div class="row mt-3">
+            <div class="col-md-3">
+                <button *ngFor="let card of cards" (click)="selectCard(card)" [class.active]="selectedCard === card">
+                    {{ card.button }}
+                </button>
+            </div>
+
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img [src]="selectedCard.image" [alt]="selectedCard.button">
+                        </div>
+                        <div class="col-md-8">
+                            <ul>
+                                <li *ngFor="let item of selectedCard.items">{{ item }}</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

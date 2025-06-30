@@ -1,0 +1,53 @@
+.cardcolor {
+    background: url("../../../assets/bgImage.png") center center no-repeat;
+    background-size: cover;
+    padding: 150px 0;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.cardcolor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 0, 0, 0.432);
+    z-index: 1;
+}
+
+.card-item img {
+    max-width: 80px;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white !important;
+    z-index: 2;
+    position: relative;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white !important;
+    z-index: 2;
+    position: relative;
+}
+
+h6 {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: white !important;
+    z-index: 2;
+    position: relative;
+}
+
+.col-md-4{
+    margin-top: 50px;
+}

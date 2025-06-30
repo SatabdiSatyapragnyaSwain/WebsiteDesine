@@ -1,0 +1,116 @@
+.mt {
+    margin-top: 100px;
+}
+
+h1.Main-titel {
+    font-size: 2.4em;
+    color: #104c9b;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p.Main-titel {
+    font-size: 1.1em;
+    color: #0c691e;
+    line-height: 1.6;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-md-3 {
+    flex: 0 0 23%;
+    margin: 1%;
+    box-sizing: border-box;
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    border: 3px solid #27fa51;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.Social-icons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    opacity: 0;
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(100%);
+}
+
+.card:hover .Social-icons {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.Social-icons i {
+    font-size: 1.4em;
+    color: #018f1d;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+
+.Social-icons i:hover {
+    color: #06d32f;
+}
+
+.memberDetails {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.memberName {
+    font-size: 2em;
+    color: #104c9b;
+    margin-bottom: 5px;
+}
+
+.memberDegignation {
+    font-size: 1em;
+    color: #0c691e;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 45%;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .col-md-3 {
+        flex: 0 0 100%;
+        margin-top: 40px;
+    }
+}

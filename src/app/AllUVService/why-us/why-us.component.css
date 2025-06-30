@@ -1,0 +1,75 @@
+.container-fluid {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+}
+
+.col-lg-3.col-md-4.col-sm-6.col-12 {
+    margin-top: 30px;
+}
+
+h1 {
+    font-size: 40px;
+    color: #104c9b;
+    font-weight: bold;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    font-size: 18px;
+    padding: 10px 15px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+    line-height: 1.6; 
+}
+
+ul li::before {
+    content: "➤";
+    color: #28a745;
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+ul li:hover {
+    background: #e9f5ee;
+    transform: translateX(5px);
+    border-radius: 8px;
+}
+
+.card{
+    border: none;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 8px;
+    height: 220px;
+    background-color: #dafbe2;
+}
+
+img{
+    height: 70px;
+    width: 70px;
+}
+
+.card h2{
+    margin-top: 10px;
+    font-size: 28px;
+    color: #104c9b;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card p{
+    font-size: 18px;
+    font-family: serif;
+    line-height: 1.6;
+}

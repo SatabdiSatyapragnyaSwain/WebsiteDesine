@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row mt">
+    <div class="col-md-12">
+      <h1 class="Main-title">Our Customers</h1>
+      <p class="Main-title">Trusted by over 1500</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12 d-flex">
+      <img *ngFor="let image of visibleImages" [src]="image" class="brand-image" />
+    </div>
+  </div>
+</div>

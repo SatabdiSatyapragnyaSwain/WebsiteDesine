@@ -1,0 +1,60 @@
+.auto-scroll-wrapper {
+    background: url("../../../assets/Internships/DomainsBacground.png") center center no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.overlay-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 60px;
+    line-height: 1.6;
+}
+
+.auto-scroll {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.card {
+    background-color: transparent;
+    flex: 0 0 auto;
+    width: 350px;
+    margin-right: 10px;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}

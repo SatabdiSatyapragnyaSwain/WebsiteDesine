@@ -1,0 +1,34 @@
+<div class="container">
+    <div class="row mt">
+        <div class="col-md-12">
+            <h1 class="Main-titel">Testimonials</h1>
+            <p class="Main-titel">Lorem ipsum dolor sit amet</p>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div *ngFor="let testimonial of getVisibleTestimonials(); let i = index" class="col-md-4">
+            <div class="card">
+                <div class="testimonial-header">
+                    <img [src]="testimonial.image" alt="Testimonial Image" />
+                    <div class="testimonial-info">
+                        <h1>{{ testimonial.name }}</h1>
+                        <h4>{{ testimonial.title }}</h4>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star" *ngFor="let star of stars"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-text">
+                    <p><span style="color: #104c9b !important; font-weight: bold;">"</span> {{ testimonial.text }} <span
+                            style="color: #104c9b !important; font-weight: bold;">"</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <button [class.active]="activeButton === 1" (click)="setActiveButton(1)"></button>
+        <button [class.active]="activeButton === 2" (click)="setActiveButton(2)"></button>
+        <button [class.active]="activeButton === 3" (click)="setActiveButton(3)"></button>
+        <button [class.active]="activeButton === 4" (click)="setActiveButton(4)"></button>
+    </div>
+</div>

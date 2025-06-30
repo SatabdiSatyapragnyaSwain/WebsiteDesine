@@ -1,0 +1,130 @@
+.mt {
+    margin-top: 100px;
+}
+
+h1.Main-titel {
+    font-size: 2.4em;
+    color: #104c9b;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p.Main-titel {
+    font-size: 1.1em;
+    color: #0c691e;
+    line-height: 1.6;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.col-md-4 {
+    margin-top: 15px;
+}
+
+.btn-custom {
+    font-size: 18px;
+    padding: .5em 1em;
+    background-color: #104c9b;
+    color: #FFF;
+    border: 0px solid #A0AEC0;
+    margin: .1em;
+    transition: background .2s ease, color .2s ease, box-shadow .2s ease, transform .2s ease;
+    box-shadow: 0 0 0 #BEE3F8;
+    transform: translateY(0);
+    margin-right: 15px;
+}
+
+.btn-custom:first-of-type {
+    border-radius: .5em 0 0 .5em;
+}
+
+.btn-custom:last-of-type {
+    border-radius: 0 .5em .5em 0;
+}
+
+.btn-custom i {
+    color: #A0AEC0;
+    margin-right: .3em;
+    transition: all .2s ease-out;
+}
+
+.btn-group:hover .btn-custom {
+    color: #A0AEC0;
+}
+
+.btn-group:hover .btn-custom:hover {
+    background: #0c691e;
+    color: #fff;
+    box-shadow: 0 0 0.8em 0 #0c691e;
+    transform: translateY(-.2em);
+}
+
+.btn-group:hover .btn-custom i {
+    color: #CBD5E0;
+}
+
+.btn-group:hover .btn-custom:hover i {
+    color: #FED7E2;
+    transform: rotate(-10deg);
+}
+
+.card img {
+    width: 100%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    animation: slideIn 1s ease-out forwards;
+    opacity: 0;
+    background-color: lightyellow;
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.btn-custom.active {
+    background-color: #0c691e;
+    color: #fff;
+    box-shadow: 0 0 0.8em 0 #0c691e;
+    transform: translateY(-.2em);
+}
+
+@media (max-width: 768px) {
+    .btn-group {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .btn-custom {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .btn-custom:first-of-type {
+        border-radius: .5em;
+    }
+
+    .btn-custom:last-of-type {
+        border-radius: .5em;
+    }
+}

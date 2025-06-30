@@ -1,0 +1,120 @@
+<div class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="mt-5">What We Enable</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 btnContainer">
+                <button [class.active]="activeSection === 'Strategy'"
+                    (click)="setActiveSection('Strategy')">Strategy</button>
+                <button [class.active]="activeSection === 'Design'" (click)="setActiveSection('Design')">Design</button>
+                <button [class.active]="activeSection === 'Build'" (click)="setActiveSection('Build')">Build</button>
+                <button [class.active]="activeSection === 'Generate'"
+                    (click)="setActiveSection('Generate')">Generate</button>
+                <button [class.active]="activeSection === 'Operate'"
+                    (click)="setActiveSection('Operate')">Operate</button>
+            </div>
+        </div>
+
+        <div class="row mb-5" *ngIf="activeSection === 'Strategy'">
+            <div class="col-md-6" @slideInLeft>
+                <div class="card">
+                    <img src="../../../assets/Service/Strategy.jpeg" />
+                </div>
+            </div>
+            <div class="col-md-6" @slideInRight>
+                <div class="card">
+                    <h2>Strategy</h2>
+                    <ul>
+                        <li>Product Roadmap & Strategy</li>
+                        <li>Technology Selection</li>
+                        <li>New Revenue Models</li>
+                        <li>Cross Pollinovation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5" *ngIf="activeSection === 'Design'">
+            <div class="col-md-6" @slideInLeft>
+                <div class="card">
+                    <img src="../../../assets/Service/Design.jpeg" />
+                </div>
+            </div>
+            <div class="col-md-6" @slideInRight>
+                <div class="card">
+                    <h2>Design</h2>
+                    <ul>
+                        <li>User Research</li>
+                        <li>Customer Experience</li>
+                        <li>Digital Architecture</li>
+                        <li>Productization & Platformization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5" *ngIf="activeSection === 'Build'">
+            <div class="col-md-6" @slideInLeft>
+                <div class="card">
+                    <img src="../../../assets/Service/Build.jpeg" />
+                </div>
+            </div>
+            <div class="col-md-6" @slideInRight>
+                <div class="card">
+                    <h2>Build</h2>
+                    <ul>
+                        <li>Cloudification</li>
+                        <li>Security</li>
+                        <li>IoTification</li>
+                        <li>Applications</li>
+                        <li>DevOps</li>
+                        <li>Data Lakes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5" *ngIf="activeSection === 'Generate'">
+            <div class="col-md-6" @slideInLeft>
+                <div class="card">
+                    <img src="../../../assets/Service/Generate.jpeg" />
+                </div>
+            </div>
+            <div class="col-md-6" @slideInRight>
+                <div class="card">
+                    <h2>Generate</h2>
+                    <ul>
+                        <li>Customer Insights</li>
+                        <li>Shop Floor Intelligence</li>
+                        <li>Machine Analytics</li>
+                        <li>Service Automation</li>
+                        <li>Supply Chain Optimization</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5" *ngIf="activeSection === 'Operate'">
+            <div class="col-md-6" @slideInLeft>
+                <div class="card">
+                    <img src="../../../assets/Service/Operate.jpeg" />
+                </div>
+            </div>
+            <div class="col-md-6" @slideInRight>
+                <div class="card">
+                    <h2>Operate</h2>
+                    <ul>
+                        <li>Edge Services</li>
+                        <li>Security Operations Center</li>
+                        <li>Cloud Operations</li>
+                        <li>DevOps Environment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

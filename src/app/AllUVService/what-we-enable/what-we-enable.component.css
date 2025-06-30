@@ -1,0 +1,139 @@
+.container-fluid {
+    background-color: #FFF;
+    padding: 20px;
+}
+
+.container-fluid h1 {
+    font-size: 40px;
+    color: #104c9b;
+    font-weight: bold;
+    text-align: center;
+}
+
+.btnContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+}
+
+.col-md-6{
+    margin-top: 30px;
+}
+
+.btnContainer button {
+    background-color: #0c691e;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.btnContainer button:hover {
+    transform: translateY(-3px);
+    background-color: #0a5818;
+}
+
+.btnContainer button.active {
+    background-color: #104c9b;
+    transform: translateY(-5px);
+}
+
+.card {
+    border-radius: 14px;
+    background-color: rgb(212, 206, 206);
+    text-align: center;
+    height: 370px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.card h2 {
+    margin-top: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #104c9b;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card ul li {
+    font-size: 20px;
+    color: #333;
+    padding: 10px 15px;
+    margin: 5px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.card ul li::before {
+    content: "➤";
+    color: #0c691e;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.card ul li:hover {
+    background-color: #e3e6ea;
+    transform: translateX(5px);
+}
+
+@media (max-width: 768px) {
+    .btnContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btnContainer button {
+        width: 80%;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    .card ul li {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container-fluid h1 {
+        font-size: 28px;
+    }
+
+    .btnContainer button {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .card {
+        height: auto;
+    }
+
+    .card h2 {
+        font-size: 22px;
+    }
+
+    .card ul li {
+        font-size: 16px;
+    }
+}

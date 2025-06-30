@@ -1,0 +1,59 @@
+.container {
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+h1.Main-title {
+  font-size: 2.4em;
+  color: #104c9b;
+  margin-bottom: 10px;
+  text-align: center;
+  transition: color 0.3s;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p.Main-title {
+  font-size: 1.1em;
+  color: #0c691e;
+  line-height: 1.6;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.brand-image {
+  flex: 1 0 auto;
+  max-width: 100%;
+  margin: 0 5px;
+  height: 80px;
+}
+
+.brand-image:hover{
+  border: 3px solid rgb(247, 191, 87);
+}
+
+/* Large devices (5 images in a row) */
+@media (min-width: 992px) {
+  .brand-image {
+    width: calc(20% - 10px);
+  }
+}
+
+/* Medium devices (3 images in a row) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .brand-image {
+    width: calc(33.33% - 10px);
+  }
+}
+
+/* Small devices (2 images in a row) */
+@media (max-width: 767px) {
+  .brand-image {
+    width: calc(50% - 10px);
+  }
+}

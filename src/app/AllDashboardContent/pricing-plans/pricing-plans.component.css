@@ -1,0 +1,86 @@
+.mt {
+    margin-top: 100px;
+}
+
+h1.Main-titel {
+    font-size: 2.4em;
+    color: #104c9b;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p.Main-titel {
+    font-size: 1.1em;
+    color: #0c691e;
+    line-height: 1.6;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.col-md-4 {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.card{
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border: 3px solid #27fa51;
+}
+
+.cardheding{
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.cardAmount{
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.feature i {
+    color: #0c691e;
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.feature p {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.btn-Quotes {
+    background-color: #0c691e;
+    color: #FFF;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn-Quotes:hover {
+    background-color: #177a2b;
+    color: #FFF;
+}
+
+
+.btn-Quotes:hover {
+    background-color: #177a2b;
+    color: #FFF;
+}

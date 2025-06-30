@@ -1,0 +1,31 @@
+<div class="container">
+    <div class="row mt">
+        <div class="col-md-12">
+            <h1 class="Main-titel">Our Portfolio</h1>
+            <p class="Main-titel">Lorem ipsum dolor sit amet</p>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-md-12 text-center">
+            <div class="btn-group" role="group" aria-label="Button group">
+                <button class="btn btn-custom" (click)="filterImages('all')"
+                    [class.active]="selectedFilter === 'all'">All</button>
+                <button class="btn btn-custom" (click)="filterImages('appDesign')"
+                    [class.active]="selectedFilter === 'appDesign'">App Design</button>
+                <button class="btn btn-custom" (click)="filterImages('appDevelopment')"
+                    [class.active]="selectedFilter === 'appDevelopment'">App Development</button>
+                <button class="btn btn-custom" (click)="filterImages('branding')"
+                    [class.active]="selectedFilter === 'branding'">Branding</button>
+                <button class="btn btn-custom" (click)="filterImages('solutions')"
+                    [class.active]="selectedFilter === 'solutions'">It Solutions</button>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div *ngFor="let image of filteredImages; let i = index" class="col-md-4">
+            <div class="card" [ngStyle]="{'animation-delay': i * 0.2 + 's'}">
+                <img [src]="image.src" [alt]="image.alt" />
+            </div>
+        </div>
+    </div>
+</div>

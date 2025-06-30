@@ -1,0 +1,53 @@
+.cardcolor {
+    background: url("../../../assets/bgImage.png") center center no-repeat;
+    background-size: cover;
+    padding: 150px 0;
+    border-radius: 0;
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.cardcolor::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(10, 0, 0, 0.432);
+    z-index: 1;
+}
+
+.text-center h3 {
+    font-size: 24px;
+    color: white !important;
+    z-index: 2;
+    position: relative;
+}
+
+.text-center p {
+    margin-top: 30px;
+    font-size: 20px;
+    color: white !important;
+    z-index: 2;
+    position: relative;
+}
+
+.btn {
+    margin-top: 30px;
+    background-color: #0c691e;
+    color: #FFF !important;
+    padding: 15px 30px !important;
+    border-radius: 50px !important;
+    text-decoration: none;
+    z-index: 2;
+    position: relative;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: #177a2b !important;
+    color: #FFF !important;
+  }

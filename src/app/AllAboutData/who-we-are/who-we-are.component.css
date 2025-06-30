@@ -1,0 +1,203 @@
+/* whoWeAre Container Start */
+.whoWeAre {
+    background: linear-gradient(white 80%, #d3d3d3 20%);
+    padding: 50px 0;
+}
+
+/* whoWeAre 1st Col-md-6 */
+.photo-frame {
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+    overflow: hidden;
+}
+
+.photo-frame img {
+    position: absolute;
+    border: 10px solid #d3d3d3;
+    border-radius: 14px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    object-fit: cover;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo-frame img:hover {
+    transform: scale(1.05);
+}
+
+.image-left-top {
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+}
+
+.image-right-bottom {
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 50%;
+}
+
+/* whoWeAre 2nd Col-md-6 */
+.whoWeAre .colData p:first-of-type {
+    font-size: 16px;
+    font-weight: bold;
+    color: #278dfa;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.whoWeAre .colData h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #0c691e;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    font-family: cursive;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.whoWeAre .colData p:last-of-type {
+    font-size: 18px;
+    color: #000;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    font-family: serifx;
+}
+
+.whoWeAre .colData {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* whoWeAre animation */
+@keyframes slideUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.animate-slide-up {
+    animation: slideUp 1s ease-in-out;
+    opacity: 0;
+}
+
+.stagger-1 {
+    animation-delay: 0.2s;
+    animation-fill-mode: forwards;
+}
+
+.stagger-2 {
+    animation-delay: 0.6s;
+    animation-fill-mode: forwards;
+}
+
+.stagger-3 {
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.stagger-4 {
+    animation-delay: 1.4s;
+    animation-fill-mode: forwards;
+}
+
+.stagger-5 {
+    animation-delay: 1.8s;
+    animation-fill-mode: forwards;
+}
+
+.stagger-6 {
+    animation-delay: 2.2s;
+    animation-fill-mode: forwards;
+}
+
+.stagger-7 {
+    animation-delay: 2.6s;
+    animation-fill-mode: forwards;
+}
+
+.stagger-8 {
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+.stagger-9 {
+    animation-delay: 3.4s;
+    animation-fill-mode: forwards;
+}
+
+/* whoWeAre Container Start */
+
+/* Split Background for the Container */
+.split-background {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card Styling */
+.split-background .card {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    flex: 1 1 calc(25% - 40px);
+    max-width: 300px;
+}
+
+.split-background .card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 15px #104c9b;
+    transition: box-shadow 0.4s ease-in-out;
+}
+
+/* Optional: Add a media query for responsiveness */
+@media (max-width: 768px) {
+    .split-background .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+.icon {
+    background-color: #d3d3d3;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 10px;
+}
+
+.icon i {
+    font-size: 24px;
+    color: #0c691e;
+}
+
+.split-background .card h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #104c9b;
+    margin-bottom: 10px;
+}
+
+.split-background .card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+}

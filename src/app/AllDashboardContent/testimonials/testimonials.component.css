@@ -1,0 +1,130 @@
+.mt {
+    margin-top: 100px;
+}
+
+h1.Main-titel {
+    font-size: 2.4em;
+    color: #104c9b;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+p.Main-titel {
+    font-size: 1.1em;
+    color: #0c691e;
+    line-height: 1.6;
+    transition: color 0.3s;
+    text-align: center;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 14px;
+    border: none;
+    box-shadow: 0 3px 12px rgba(53, 53, 53, 0.2);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    border: 3px solid gold;
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.testimonial-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonial-info {
+    margin-right: 15px;
+}
+
+.testimonial-info h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+    color: #104c9b;
+}
+
+.testimonial-info h4 {
+    font-size: 1em;
+    color: #777;
+}
+
+.testimonial-rating i {
+    color: gold;
+    margin-right: 5px;
+}
+
+.testimonial-text {
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 20px;
+    line-height: 1.2;
+}
+
+.testimonial-text p {
+    margin: 0;
+    font-style: italic;
+    color: #555;
+}
+
+.col-md-12 {
+    text-align: center;
+    margin-top: 15px;
+}
+
+button {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #cfedfc;
+    border: none;
+    margin-right: 5px;
+}
+
+button.active {
+    background-color: #0c691e;
+}
+
+@media screen and (max-width: 992px) {
+    .card {
+        padding: 15px;
+    }
+
+    .testimonial-header img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .testimonial-info h1 {
+        font-size: 1.6em;
+    }
+
+    .testimonial-info h4 {
+        font-size: 0.9em;
+    }
+
+    .testimonial-text {
+        font-size: 20px;
+    }
+
+    .col-md-12 {
+        text-align: center;
+    }
+
+    button {
+        height: 12px;
+        width: 12px;
+    }
+}
